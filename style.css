@@ -1,0 +1,241 @@
+/* Global Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+	margin: 30px 0;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+p {
+	margin: 30px 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+a:hover {
+	opacity: 0.9;
+}
+
+
+hr {
+ 	width: 150px;
+ 	height: 2px;
+ 	background-color: #002a32;
+ 	border: 0;
+ 	margin-bottom: 30px;
+}
+
+section, footer {
+ 	display: flex;
+ 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+section:not(#home) {
+	padding: 100px 200px;
+}
+
+footer {
+	background-color: #002a32;
+	font-size: 12px;
+	color: white;
+}
+
+@media (max-width: 767px) {
+	section:not(#home) {
+		padding: 100px 30px;
+	}
+}
+
+
+/* Navbar */
+
+header {
+	background-color: #002a32;
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	height: 11%;
+	z-index: 10;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav {
+	padding-right: 25px;
+}
+
+nav a {
+	color: white;
+}
+
+nav li {
+	display: inline;
+	margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav {
+		padding-right: 0px;
+	}	
+}
+
+
+/* Home */
+
+#profile-picture {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.banner {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	padding: 250px 0;
+}
+
+.btn {
+	padding: 20px;
+	font-size: 15px;
+	border-radius: 15px;
+	border: none;
+	background-color: #dad7cd;
+	color: #002a32;
+	font-weight: 700;
+	cursor: pointer; 
+	
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+
+/* About */
+
+#about {
+	background-color: #f4f3ee;
+}
+
+#about img {
+	width: 20%;
+	height: 20%;
+}
+
+@media (max-width: 767px) {
+	#about img {
+		width: 60%;
+		height: 60%;
+	}
+}
+
+/* Hobbies */
+
+#hobbies i {
+	color: #002a32;
+	font-size: 40px;
+
+}
+
+.grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid ul {
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	width: 80%;
+}
+
+.second-list-item {
+	margin-left: 100px;
+	margin-right:  50px;
+}
+
+.third-list-item {
+	margin-right: 100px;
+	margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+	.grid ul {
+		display: flex; 
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.second-list-item {
+		margin-left: 0px;
+		margin-right:  0px;
+	}
+
+	.third-list-item {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+}
+
+
+/* Contact */
+
+#contacts {
+	background-color: #f4f3ee;
+	min-height: 70vh;
+}
+
+#contacts i {
+	font-size: 30px;
+	margin: 0 10px;
+}
+
+#contacts li {
+	display: inline;
+	margin: 0 10px;
+}
+
+
